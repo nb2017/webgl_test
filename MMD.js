@@ -6,8 +6,8 @@
   this.MMD = (function() {
     //------------------------------------
     //  MMD コンストラクタ
-    // @params canvas width height
-    //        描画情報 幅    高さ
+    // @params canvas,width,height
+    //        描画情報,幅,高さ
     //------------------------------------
     function MMD(canvas, width, height) {
       this.width = width;
