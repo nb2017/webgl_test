@@ -4,6 +4,11 @@
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   this.MMD = (function() {
+    //------------------------------------
+    //  MMD コンストラクタ
+    // @params canvas width height
+    //        描画情報 幅    高さ
+    //------------------------------------
     function MMD(canvas, width, height) {
       this.width = width;
       this.height = height;
@@ -14,6 +19,9 @@
       }
     }
 
+    //------------------------------------
+    // シェーダ初期化
+    //------------------------------------
     MMD.prototype.initShaders = function() {
       var attributes, fshader, line, name, src, type, uniforms, vshader, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2;
       vshader = this.gl.createShader(this.gl.VERTEX_SHADER);
