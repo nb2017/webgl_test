@@ -1,5 +1,5 @@
 window.onload = function() {
-  var size = 512;
+  var size = 384; // 512→384
   var canvas = document.createElement('canvas');
   canvas.width = size;
   canvas.height = size;
