@@ -13,7 +13,7 @@ window.onload = function() {
   mmd.registerKeyListener(document);
   mmd.registerMouseListener(document);
 
-  var miku = new MMD.Model('model', 'Miku_Hatsune_Ver2.pmd');
+  var miku = new MMD.Model('model', 'Miku_Hatsune.pmd');
   miku.load(function() {
     mmd.addModel(miku);
     mmd.initBuffers();
